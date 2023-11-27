@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600;700&display=swap');
+
+nav h2{
+	display: block;
+	color:whitesmoke;
+	text-align: left;
+	align-items: left;
+}
+
+nav span{
+	color: 	#176feb;
+	text-shadow: black;
+}
+
+/* MEDIA PORT, MOBILE*/
+@media only screen and (max-width: 768px) {
+
+.player-card {
+	width: 300px;
+	height: auto;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.player-card p {
+	margin: 0;
+}
+
+.wrapper-global-stats {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.section-global-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.right {
+	display: none;
+	visibility: hidden;
+}
+	
+nav h2{
+	display: block;
+	color:whitesmoke;
+	text-align: right;
+}
+
+	
+@media only screen and (max-width: 768px) {
+	.section-global-stats {
+		justify-content: flex-start;
+	}
+}
+
+.wrapper-global-stats h2 {
+	font-size: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	.wrapper-global-stats h2 {
+		font-size: 30px;
+	}
+}
+}

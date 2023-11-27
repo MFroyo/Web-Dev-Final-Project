@@ -11,15 +11,17 @@ body{
 	width: 100vw;
 	height: 100vh;
 	background-color: #71797E;
+	background-image: url(../img/ls.png);
+	background-position: 8px 8px;
 }
 
 .wrapper{
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .wrapper-global-stats{
-	width: 100%;
+	width: 90%;
 	margin-top: 50px;
 	margin: 0 auto;
 }
@@ -35,6 +37,10 @@ header{
 	background-color:#36454F;
 }
 
+header h1{
+	color: whitesmoke;	
+}
+
 nav{
 	display: flex;
 	align-items: center;
@@ -45,8 +51,7 @@ nav{
 
 nav h2{
 	color:whitesmoke;
-	text-align: center;
-	margin-left: 43.5%;
+	text-align: left;
 }
 
 nav span{
@@ -54,10 +59,19 @@ nav span{
 	text-shadow: black;
 }
 
+nav a:link { text-decoration: none; }
+
+nav a:visited { text-decoration: none; }
+
+nav a:hover { text-decoration: none; }
+
+nav a:active { text-decoration: none; }
+
 .right a{
-	color: black;
+	color: whitesmoke;
 	font-weight: 400;
-	margin-left: 10px;
+	text-align: right;
+	padding-left: 2vw;
 	text-decoration: none;
 	letter-spacing: 0.07rem;
 }
@@ -97,6 +111,7 @@ nav span{
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
+	text-align: left;
   }
   
   /* Change color of dropdown links on hover */
@@ -120,21 +135,14 @@ main{
 	margin-bottom: 20px;
 }
 
+main h2{
+	color: whitesmoke;	
+}
+
 .section-promo{
 	position: relative;
 	padding: 20px 0px;
-}
-
-.promo-background h1{
-	color: white;
-	margin-left: 37%;
-	font-size: 30px;
-	padding: 40px 10px;
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	left: 0;
-	letter-spacing: 0.07rem;
+	display: none;
 }
 
 .promo-background{
@@ -147,8 +155,8 @@ main{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: rgba(0, 0, 0, 0.5);
-	background-image: url(../img/light-bar.gif);
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	background-image: url(../img/promo.png);
 }
 
 .section-tutorial{
@@ -158,6 +166,8 @@ main{
 .section-tutorial h2{
 	font-size: 50px;
 	margin-bottom: 20px;
+	text-align: center;
+	color: whitesmoke;
 }
 
 .section-tutorial-container{
@@ -182,19 +192,20 @@ main{
 
 .section-tutorial-container div h3{
 	color: #176feb;
-	font-size: 23px;
+	font-size: 1vw;
 	text-transform: uppercase;
 }
 
 .section-tutorial-container div p{
 	color: black;
 	padding: 10px 0px;
-	font-size: 15px;
+	font-size: 0.75vw;
 	line-height: 25px;
 }
 
 .section-tutorial-container h4{
 	padding: 10px 0px;
+	font-size: 0.75vw;
 	font-weight: 500;
 }
 
@@ -278,18 +289,20 @@ hr{
 	font-size: 50px;
 	margin-bottom: 20px;
 	text-align: center;
+	color: whitesmoke;
 }
 
 .section-extra-flex{
 	display: flex;
 	align-items: baseline;
+	flex-direction:row;
 	justify-content: space-between;
 	align-items:center;
 }
 
 .section-extra-flex div{
 	color: white;
-	width: 485px;
+	width: 100%;
 	height: 500px;
 	border-radius: 5px;
 	padding: 10px 10px;
@@ -303,48 +316,18 @@ hr{
 }
 
 .section-extra-flex a{
+	width: 20%;
 	color: #03a1fc;
 	padding: 10px 10px;
 	border-radius: 5px;
 	text-decoration: none;
-	background-color: #71797E;
-}
-
-.section-extra-flex2{
-	display: flex;
-	align-items: baseline;
-	justify-content: center;
-	gap: 5px;
-	margin-top: 25px;
-	align-items:center;
-}
-
-.section-extra-flex2 div{
-	color: white;
-	width: 485px;
-	height: 500px;
-	border-radius: 5px;
-	padding: 10px 10px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.section-extra-flex2 p{
-	color: white;
-	padding: 10px 0px;
-	align-items: flex-end;
-}
-
-.section-extra-flex2 a{
-	color: #03a1fc;
-	padding: 10px 10px;
-	border-radius: 5px;
-	text-decoration: none;
-	background-color: #71797E;
 }
 
 
 /* SCREENSHOTS */
 .screenshots {
+	visibility: hidden;
+	display: none;
 	box-sizing: border-box;
 }
 
@@ -445,117 +428,115 @@ hr{
 
 
 /* STATISTICS */
-.wrapper-global-stats{
+.wrapper-global-stats {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-}
-
-.wrapper-global-stats h2{
-	font-size: 50px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-.section-global-stats{
+  }
+  
+  #stats_header {
+	  font-size: 50px;
+	  margin-bottom: 20px;
+	  text-align: center;
+	  color: whitesmoke;
+  }
+  
+  .section-global-stats {
 	display: flex;
-	color: #03a1fc;
-	margin-bottom: 70px;
-	text-align: center;
-	align-content: center;
-	justify-content: space-between;
-}
-
-.section-global-stats div{
-	width: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	width: 
+  }
+  
+  .section-global-stats div {
+	width: 300px;
 	height: auto;
 	padding: 20px;
-	border-radius: 3px;
-	border: 1px solid #03a1fc;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	border-radius: 10px;
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
 }
-
-.section-global-stats div i{
+  
+  .section-global-stats div i {
 	font-size: 50px;
-	padding: 10px;
-}
-
-.section-global-stats div h1{
-	padding: 5px 20px;
-	font-size: 25px;
+	margin-bottom: 10px;
+	color: #03a1fc;
+  }
+  
+  .section-global-stats div h1 {
+	margin-bottom: 10px;
+	font-size: 30px;
 	font-weight: 400;
-}
-
-.section-global-stats div h3{
-	padding: 0px 20px;
-	font-size: 20px;
+	color: #222;
+  }
+  
+  .section-global-stats div h3 {
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #777;
+  }
+  
+  /* Redesigned global stats */
+  .wrapper-global-stats {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .section-global-stats div {
+	flex: 1 1 300px;
+  }
+  
+  .section-global-stats div:last-child {
+	margin-right: 0;
+  }
+  
+  .section-global-stats div:hover {
+	background-color: #f0f0f0;
+	transform: translateY(-5px);
+	transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .section-global-stats div:hover h1 {
+	color: #03a1fc;
+  }
+  
+  .section-global-stats div:hover i {
+	color: #03a1fc;
 }
 
 /* IMAGES SET HERE YOUR IMAGE */
-.img1{
+.img1, .img2, .img3, .img4, .img5 {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: #03a1fc;
+	background-color: #03a1fc;	
+}
+
+.img1{
 	background-image: url(../img/1.png);
 }
 
-.img1:hover {
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover {
 	filter:brightness(70%);
 	filter: blur(2px);
 }
 
 .img2{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: #03a1fc;
-
  	background-image: url(../img/2.png);
 }
 
-.img2:hover {
-	filter:brightness(70%);
-	filter: blur(2px);
-}
 
 .img3{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: #03a1fc;
-	background-image: cross-fade(20%);
 	background-image: url(../img/3.png);
 }
 
-.img3:hover {
-	filter:brightness(70%);
-	filter: blur(2px);
-}
-
 .img4{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: #03a1fc;
 	background-image: url(../img/4.png);
 }
 
-.img4:hover {
-	filter:brightness(70%);
-	filter: blur(2px);
-}
-
 .img5{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: #03a1fc;
 	background-image: url(../img/5.png);
-}
-
-.img5:hover {
-	filter:brightness(70%);
-	filter: blur(2px);
 }
 
 footer{
@@ -572,19 +553,30 @@ footer{
 		margin-top: 10px;
 	}
 
+	
 	.section-extra-flex{
 		display: flex;
-		align-items: baseline;
+		align-items: top;
 		justify-content: space-between;
 	}
 	
 	.section-extra-flex div{
 		color: white;
-		width: 250px;
-		height: auto;
+		width: 100%;
+		height: 300px;
 		border-radius: 5px;
 		padding: 10px 10px;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	}
+	
+	.section-extra-flex p{
+		visibility: hidden;
+		display:none;
+	}
+	
+	.screenshots {
+		visibility: hidden;
+		display:none;
 	}
 
 }
@@ -602,12 +594,18 @@ footer{
 	}
 
 	.wrapper-tutorial{
-		width: 100%;
+		width: auto;
 		margin: 1 auto;
 	}
 
 	nav h2{ /* Community name */
-		font-size: 20px;
+		font-size: 5vw;
+		text-align: left;
+	}
+	
+	.right {
+		display: none;
+		visibility: hidden;
 	}
 
 	.section-tutorial h2{
@@ -615,26 +613,17 @@ footer{
 		margin-bottom: 20px;
 		text-align: center;
 	}
+	
+	.section-tutorial-container div{
+		margin-bottom: 20px;
+		width: 95%;
+	}
 
 	.section-tutorial-container{
 		display: flex;
 		align-items: top;
 		flex-direction: column;
 		justify-content: space-between;
-	}
-
-	.section-promo div{
-		color: white;
-		border-radius: 5px;
-		background-size: cover;
-		width: auto;
-		height: auto;
-		padding: 20px;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-color: rgba(0, 0, 0, 0.5);
-		background-image: url(../img/promo.png);
-		box-shadow: rgb(0 0 0 / 11%) 0 1px;
 	}
 
 	.section-tutorial-container{
@@ -645,25 +634,31 @@ footer{
 
 	.section-tutorial-container div{
 		margin-bottom: 20px;
+		width: 95%;
+		height: auto;
+		
+	}
+	
+	.section-tutorial-container div h3{
+		font-size: 27px;
+	}
+
+	.section-tutorial-container div p{
+		font-size: 15px;
+	}
+
+	.section-tutorial-container h4{
+		font-size: 15px;
 	}
 
 	.section-extra-flex div{
 		color: white;
-		width: auto;
-		height: auto;
+		width:auto;
+		height: 300px;
 		border-radius: 5px;
 		padding: 10px 0px;
 		margin-bottom: 20px;
 		box-shadow: rgb(0 0 0 / 15%) 2px 2px;
-	}
-
-	.right a{
-		color: black;
-		font-size: 15px;
-		font-weight: 400;
-		padding: 10px 5px;
-		text-decoration: none;
-		letter-spacing: 0.02rem;
 	}
 
 	.section-extra-flex{
@@ -674,19 +669,16 @@ footer{
 		padding: 5px 10px;
 	}
 
-	.section-extra-flex p{
-		padding: 5px 10px;
-		font-size: 13px;
-	}
-
 	.section-extra-flex a{
 		padding: 2px 5px;
 		font-size: 13px;
+		width:95%;
+		height: 300px;
+		margin-bottom: 20px;
 	}
 	
 	.section-extra h2{
 		font-size: 30px;
-		/* margin-bottom: 20px; */
 	}
 
 	.section-global-stats{
@@ -701,6 +693,27 @@ footer{
 
 	.section-global-stats div{
 		margin-bottom: 20px;
+	}
+	
+	
+	.screenshots {
+		visibility: hidden;
+		display:none;
+	}
+	
+	.section-promo {
+		visibility: hidden;
+		display:none;
+	}
+	
+	.dropbtn {
+		visibility: hidden;
+		display: none;
+	}
+	
+	#stats_header{
+		font-size: 30px;
+
 	}
 
 	footer{
