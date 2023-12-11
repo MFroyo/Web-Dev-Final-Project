@@ -6,6 +6,7 @@
 	<title>Code4 Gaming Community</title>
 	<link rel="stylesheet" href="backend/css/main.css"> <!-- do not touch this, unless you know what u are doing.. -->
 	<link rel="stylesheet" href="backend/css/menu.css">
+	<link rel="stylesheet" href="backend/css/coffee.css">
 	<script src="https://kit.fontawesome.com/af48d48999.js" crossorigin="anonymous"></script>
     <meta property="og:title" content="FivePD Online"> <!-- meta if u send links on discord etc includes this -->
     <meta property="og:description" content="Go patrol or get fired.."> <!-- meta if u send links on discord etc includes this -->
@@ -68,10 +69,16 @@
 	<main>
 			<div class="wrapper">
 				<div class="section-promo">
-					<div class="promo-background"></div>
+					<div class="promo-background">
+					<h2>Welcome to Code4PD</h2>
+					<p>CodePD is a gaming created by the players, for the players where you are able to roleplay as an assortment of emergency services. 
+					 Whether you wish to play as a police officer, state trooper, sheriff deputy, or respond to fire and medical calls, we have whatever fits you.
+					</p>
+					<h3>Welcome to the force.</h3>
+					</div>
 				</div>
 				<div class="section-tutorial">
-					<h2>Welcome to Code4PD</h2> 
+					<h2>Information</h2>
 					<div class="wrapper-tutorial">
 						<div class="section-tutorial-container">
 							<div class="rtr">
@@ -151,11 +158,11 @@
 					</div>
 				</div>
 
-				<!--SCREENSHOT SLIDESHOW -->
+				<!-- SCREENSHOT SLIDESHOW
 				<div class="screenshots">
 					<h2>Community Screenshots</h2>
 					<div class="container">
-						<!-- Full-width images with number text -->
+						<!-- Full-width images with number text 
 						<div class="mySlides">
 							<div class="numbertext">1 / 17</div>
 								<img src="backend/img/gallery/1.png" style="width:100%">
@@ -241,7 +248,7 @@
 								<img src="backend/img/gallery/17.png" style="width:100%">
 						</div>
 
-						<!-- Next and previous buttons -->
+						Next and previous buttons 
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 						</div>
@@ -278,7 +285,8 @@
 					dots[slideIndex-1].className += " active";
 					captionText.innerHTML = dots[slideIndex-1].alt;
 				}
-			</script>
+			</script> -->
+			</div>
 				<!--GLOBAL STATS -->
 				<br>
 				<h2 id = "stats_header">Statistics</h2>
@@ -345,8 +353,8 @@
 			</div>		
 	</main>
 	<footer>
-		<div class="wrapper"> <!-- change below requested text </code> -->
-			<p>FivePD Online 2023</p>
+		<div class="footer"> 
+				<p>Created by Mitchell Froelich and Brendan Harrington</p>
 		</div>
 	</footer>
 </body>
