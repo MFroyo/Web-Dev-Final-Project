@@ -49,11 +49,11 @@ Finally, the rest is mostly a combination of CSS, CSS transitions and HTML to ge
 
 ## Individual Member Notes
 
-Mitchell Froelich: Handled the creation of the main page under index.php, selection of images, and development of the mobile display of the webpage. 
+### Mitchell Froelich: Handled the creation of the main page under index.php, selection of images, and development of the mobile display of the webpage. 
 
 Mitchell generated a template for the site, made the working information blocks for the main page, the different department image sections, and he created the internal parts of the information section of the homepage to the community owner's standards and wishse. From there, he created the tables for reports to be displayed into, and the display blocks for the users on the Online Player page. He also generated the menu that is displayed with the user views the site from a mobile viewport (The hamburger lines to X transition). He did so using HTML, CSS and a few pieces of JavaScript in order to make the working part interact properly. He also implemented the slideshow section that is currently greyed out due to the request of the community owner.
 
-Brendan Harrington: Handled the coding of the generation of SQL code, created the players.php and the search pages working parts within the HTML and CSS.
+### Brendan Harrington: Handled the coding of the generation of SQL code, created the players.php and the search pages working parts within the HTML and CSS.
 
 Brendan accomplished the tasks of generating SQL queries to retrieve the data. He did so by using the knowledge developed from our Databases course under Carson Gross. We tested the result of the queries and made sure everything was up to par with what the owner wanted before coming to a final draft as presented. For the Online Players page, he integrated with the servers json file in order to retrieve the online players and their info to make the display of who is actually online at the time the individual looks at the page. 
 
